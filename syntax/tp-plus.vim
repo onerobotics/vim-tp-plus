@@ -17,8 +17,12 @@ syn match       tppIdentifier        /[a-z][a-zA-Z0-9_\?\!]*/
 hi def link     tppIdentifier        Identifier
 
 " Constants
-syn match       tppConstant          /[A-Z0-9_\?\!]\+/
+syn match       tppConstant          /[A-Z0-9_\?\!]\+\>/
 hi def link     tppConstant          Constant
+
+" Program calls
+syn match       tppProgramCall       /[A-Z0-9_\?\!]\+\((\)\@=/
+hi def link     tppProgramCall       Function
 
 " Preproc
 syn keyword     tppHeader            TP_IGNORE_PAUSE TP_COMMENT TP_GROUPMASK
