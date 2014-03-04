@@ -13,7 +13,7 @@ if version < 600
 endif
 
 " Identifiers
-syn match       tppIdentifier        /[a-z][a-zA-Z0-9_\?\!]*/
+syn match       tppIdentifier        /[a-zA-Z0-9_\?\!]*/
 hi def link     tppIdentifier        Identifier
 
 " Constants
